@@ -20,13 +20,6 @@ svg {
   min-width: 100%;
   display: block;
 }
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 
 body {
   height: 100%;
@@ -45,10 +38,10 @@ body {
   border-radius: 16px;
   padding: 2rem;
   gap: 2rem;
-  margin: 6rem 3rem;
+  margin: 15% 3rem;
   box-shadow: 12px 12px var(--Black);
 
-  max-width: 40rem;
+  max-width: 38rem;
 }
 .illustrationContainer {
   width: 100%;
@@ -67,6 +60,9 @@ body {
   margin-right: auto;
   border-radius: 4px;
 }
+.blogTag:hover {
+  cursor: pointer;
+}
 .publishingDate {
   font-size: 1.2rem;
 }
@@ -74,6 +70,10 @@ body {
   font-size: 2rem;
   font-weight: var(--Font-Weight-Bold);
   word-spacing: 0.3rem;
+}
+.blogTitle:hover {
+  cursor: pointer;
+  color: var(--Primary-Color);
 }
 .blogText {
   color: var(--Grey);
@@ -96,7 +96,23 @@ body {
   font-weight: var(--Font-Weight-Bold);
   padding: 0 1rem;
   font-size: 1.3rem;
+  color: var(--Black);
+  text-decoration: none;
+}
+.authorName:hover {
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 
 @media screen and (min-width: 980px) {
+  .card {
+    margin: 10% 3rem;
+  }
 }
